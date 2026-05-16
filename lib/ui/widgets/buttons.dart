@@ -66,3 +66,78 @@ class CustomTextButton extends StatelessWidget {
     );
   }
 }
+
+class CustomSmallButton extends StatelessWidget {
+  final String title;
+  final VoidCallback onPressed;
+
+  const CustomSmallButton({
+    super.key,
+    required this.title,
+    required this.onPressed,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton(
+      onPressed: onPressed,
+      style: ElevatedButton.styleFrom(
+        backgroundColor: orangeColor,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+        ),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 20,
+          vertical: 10,
+        ),
+        elevation: 0,
+      ),
+      child: Text(
+        title,
+        style: whiteTextStyle.copyWith(
+          fontWeight: semiBold,
+        ),
+      ),
+    );
+  }
+}
+
+class CustomLightButton extends StatelessWidget {
+  final String title;
+  final VoidCallback onPressed;
+  final double? width;
+
+  const CustomLightButton({
+    super.key,
+    required this.title,
+    required this.onPressed,
+    this.width,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: width,
+      child: ElevatedButton(
+        onPressed: onPressed,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: orangeColor.withOpacity(0.1),
+          elevation: 0,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 24,
+            vertical: 12,
+          ),
+        ),
+        child: Text(
+          title,
+          style: orangeTextStyle.copyWith(
+            fontWeight: semiBold,
+          ),
+        ),
+      ),
+    );
+  }
+}

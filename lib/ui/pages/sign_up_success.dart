@@ -59,7 +59,7 @@ class _SignUpSuccessPageState extends State<SignUpSuccessPage>
               height: 26,
             ),
             Text(
-              'Grow your finance start\ntogether with us',
+              'Eksplorasi ribuan resep\ndan kelola dapurmu',
               style: grayTextStyle,
               textAlign: TextAlign.center,
             ),

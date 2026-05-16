@@ -1,6 +1,5 @@
 import 'dart:async';
 
-import 'package:olahin/shared/theme.dart';
 import 'package:flutter/material.dart';
 
 class SplashPage extends StatefulWidget {

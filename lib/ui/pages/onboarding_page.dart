@@ -33,9 +33,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
             fontFamily: blackTextStyle.fontFamily,
           ),
           children: [
-            const TextSpan(text: "It's a big world out\nthere go "),
+            const TextSpan(text: "Temukan inspirasi\nmasakan "),
             TextSpan(
-              text: "explore",
+              text: "hari ini",
               style: TextStyle(
                 color: orangeColor,
                 decoration: TextDecoration.underline,
@@ -58,9 +58,9 @@ class _OnboardingPageState extends State<OnboardingPage> {
             fontFamily: blackTextStyle.fontFamily,
           ),
           children: [
-            const TextSpan(text: "People don't take trips,\ntrips take "),
+            const TextSpan(text: "Kelola bahan makanan,\nmasak jadi "),
             TextSpan(
-              text: "people",
+              text: "mudah",
               style: TextStyle(
                 color: orangeColor,
                 decoration: TextDecoration.underline,
@@ -75,8 +75,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
   }
 
   final List<String> subtitles = [
-    'To get the best of your adventure you just\nneed to leave and go where you like. we are\nwaiting for you',
-    'To get the best of your adventure you just\nneed to leave and go where you like. we are\nwaiting for you',
+    'Kelola stok bahan makananmu dan temukan\nberbagai resep lezat yang bisa dibuat\ndari apa yang kamu punya',
+    'Jangan biarkan bahan makanan terbuang sia-sia,\nayo mulai masak hidangan spesialmu\nsekarang juga',
   ];
 
   @override

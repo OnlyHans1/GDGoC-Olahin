@@ -52,7 +52,7 @@ class _SignUpPageState extends State<SignUpPage> {
                 ),
               ),
               Text(
-                'Join Us to Unlock\nYour Growth',
+                'Daftar untuk Mulai\nPerjalanan Masakmu',
                 style:
                     blackTextStyle.copyWith(fontSize: 20, fontWeight: semiBold),
               ),
